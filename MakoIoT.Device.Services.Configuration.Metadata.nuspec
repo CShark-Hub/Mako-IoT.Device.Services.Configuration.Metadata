@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MakoIoT.Device.Services.Configuration.Metadata</id>
+    <version>$version$</version>
+    <title>MakoIoT.Device.Services.Configuration.Metadata</title>
+    <authors>CSHARK</authors>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="file">LICENSE.md</license>
+    <releaseNotes>
+    </releaseNotes>
+    <readme>docs\README.md</readme>
+    <developmentDependency>false</developmentDependency>
+    <projectUrl>https://github.com/CShark-Hub/Mako-IoT.Device.Services.Configuration.Metadata</projectUrl>
+    <repository type="git" url="https://github.com/CShark-Hub/Mako-IoT.Device.Services.Configuration.Metadata" />
+    <copyright>Copyright (c) CSHARK Sp. z o. o.</copyright>
+    <description>Configuration metadata tools for MAKO-IoT device config API and app.</description>
+    <tags>nanoFramework C# csharp netmf netnf mako-iot configuration api metadata</tags>
+    <dependencies>
+	    <dependency id="MakoIoT.Device.Services.DependencyInjection" version="1.0.3"  />
+	    <dependency id="MakoIoT.Device.Services.Interface" version="1.0.3"  />
+	    <dependency id="nanoFramework.CoreLibrary" version="1.12.0"  />
+	    <dependency id="nanoFramework.Logging" version="1.1.25"  />
+	    <dependency id="nanoFramework.System.Collections" version="1.4.0"  />
+	    <dependency id="nanoFramework.System.Text" version="1.2.7"  />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="src\MakoIoT.Device.Services.Configuration.Metadata\bin\Release\MakoIoT.Device.Services.Configuration.Metadata.dll" target="lib\MakoIoT.Device.Services.Configuration.Metadata.dll" />
+    <file src="src\MakoIoT.Device.Services.Configuration.Metadata\bin\Release\MakoIoT.Device.Services.Configuration.Metadata.pdb" target="lib\MakoIoT.Device.Services.Configuration.Metadata.pdb" />
+    <file src="src\MakoIoT.Device.Services.Configuration.Metadata\bin\Release\MakoIoT.Device.Services.Configuration.Metadata.pdbx" target="lib\MakoIoT.Device.Services.Configuration.Metadata.pdbx" />
+    <file src="src\MakoIoT.Device.Services.Configuration.Metadata\bin\Release\MakoIoT.Device.Services.Configuration.Metadata.pe" target="lib\MakoIoT.Device.Services.Configuration.Metadata.pe" />
+    <file src="README.md" target="docs\" />
+    <file src="LICENSE.md" target="" />
+  </files>
+</package>
