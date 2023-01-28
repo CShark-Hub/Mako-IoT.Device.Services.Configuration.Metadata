@@ -1,6 +1,6 @@
 ﻿using MakoIoT.Device.Services.Configuration.Metadata.Services;
-using MakoIoT.Device.Services.DependencyInjection;
 using MakoIoT.Device.Services.Interface;
+using nanoFramework.DependencyInjection;
 
 namespace MakoIoT.Device.Services.Configuration.Metadata.Extensions
 {
@@ -10,10 +10,10 @@ namespace MakoIoT.Device.Services.Configuration.Metadata.Extensions
     {
         public static IDeviceBuilder AddConfigurationMetadata(this IDeviceBuilder builder, ConfigurationMetadataDelegate configureMetadataAction)
         {
-            DI.RegisterSingleton(typeof(IConfigurationMetadataService), typeof(ConfigurationMetadataService));
+            builder.Services.AddSingleton(typeof(IConfigurationMetadataService), typeof(ConfigurationMetadataService));
             var options = new ConfigurationMetadataOptions();
             configureMetadataAction(options);
-            DI.RegisterInstance(typeof(ConfigurationMetadataOptions), options);
+            builder.Services.AddSingleton(typeof(ConfigurationMetadataOptions), options);
 
             return builder;
         }
