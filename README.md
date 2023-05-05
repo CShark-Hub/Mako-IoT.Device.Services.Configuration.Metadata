@@ -1,4 +1,5 @@
-# Project readme
+#  Mako-IoT.Device.Services.Configuration.Metadata
+Attribute-based confugration metadata. Metadata is exposed via configuration API.
 
 ## How to manually sync fork
 - Clone repository and navigate into folder
