@@ -1,6 +1,6 @@
 ﻿using MakoIoT.Device.Services.Configuration.Metadata.Services;
 using MakoIoT.Device.Services.Interface;
-using nanoFramework.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MakoIoT.Device.Services.Configuration.Metadata.Extensions
 {
