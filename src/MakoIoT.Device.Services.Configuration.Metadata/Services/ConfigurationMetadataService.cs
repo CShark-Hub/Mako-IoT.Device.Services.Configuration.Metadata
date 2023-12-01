@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace MakoIoT.Device.Services.Configuration.Metadata.Services
+﻿namespace MakoIoT.Device.Services.Configuration.Metadata.Services
 {
     public class ConfigurationMetadataService : IConfigurationMetadataService
     {
@@ -16,6 +14,7 @@ namespace MakoIoT.Device.Services.Configuration.Metadata.Services
             sectionName = sectionName.ToLower();
             if (_options.Metadata.Contains(sectionName))
                 return (string)_options.Metadata[sectionName];
+
             return null;
         }
 
