@@ -19,8 +19,6 @@
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
-    <Compile Include="Attributes\ParameterMetadataAttribute.cs" />
-    <Compile Include="Attributes\SectionMetadataAttribute.cs" />
     <Compile Include="ConfigurationMetadataOptions.cs" />
     <Compile Include="Extensions\DeviceBuilderExtension.cs" />
     <Compile Include="Services\ConfigurationMetadataService.cs" />
@@ -50,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attributes\" />
   </ItemGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.CSharp.targets')" />
   <ProjectExtensions>
